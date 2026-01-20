@@ -79,7 +79,7 @@ demo = gr.Interface(
         gr.Label(label="Prediction"),
         gr.Number(label="Survival Probability"),
     ],
-    title="Titanic Survival Predictor",
+    title="Titanic Passenger Survival Predictor",
     description="Predict survival using a trained sklearn Pipeline and Gradio."
 )
 
