@@ -1,0 +1,2 @@
+Passenger Class (pclass),Sex,Age,Siblings/Spouses aboard (sibsp),Parents/Children aboard (parch),Fare,Embarked,Prediction,Survival Probability,timestamp
+1,female,35,1,0,53.1,S,"{""label"": ""Survived \u2705"", ""confidences"": null}",0.9927844994850555,2026-01-20 12:09:51.731809
