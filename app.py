@@ -3,12 +3,9 @@ import pandas as pd
 import joblib
 import gradio as gr
 
-# MUST exist before loading model
+
 def clip_outliers(X):
-    """
-    Works whether X is a pandas DataFrame or a numpy ndarray.
-    Clips each feature between 1st and 99th percentile.
-    """
+
     X_arr = np.asarray(X, dtype=float)
     X_out = X_arr.copy()
 
@@ -48,11 +45,11 @@ def predict_survival(pclass, sex, age, sibsp, parch, fare, embarked):
         "fare": fare,
         "embarked": embarked,
         "family_size": family_size,
-        "alone": alone_val,     # your pipeline expects this
-        "is_alone": alone_val,  # extra (ok if unused)
+        "alone": alone_val,     
+        "is_alone": alone_val,  
     }])
 
-    # If pipeline expects specific columns, ensure they're present
+    
     if hasattr(model, "feature_names_in_"):
         for col in model.feature_names_in_:
             if col not in x.columns:
