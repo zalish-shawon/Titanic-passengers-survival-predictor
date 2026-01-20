@@ -1,4 +1,4 @@
-# Titanic Survival Predictor (ML)
+# Titanic Passengers Survival Predictor (ML)
 
 This project builds a **Machine Learning classification model** to predict whether a passenger **survived** the Titanic disaster. It includes a full ML workflow (preprocessing → pipeline → training → cross-validation → hyperparameter tuning → evaluation) and a **Gradio web app** for interactive predictions.
 
